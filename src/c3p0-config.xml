@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+    <named-config name="testc3p0">
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/digital?useUnicode=true&amp;characterEncoding=UTF-8
+        </property>
+        <property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+        <property name="user">root</property>
+        <property name="password">0320</property>
+
+        <!--若数据库中连接数不足时，一次向数据库库服务器申请多少个连接-->
+        <property name="acquireIncrement">5</property>
+        <!--初始化数据库连接池时的数量-->
+        <property name="initialPoolSize">10</property>
+        <!-- 数据库连接池中的最小的数据库连接数-->
+        <property name="minPoolSize">10</property>
+        <!-- 数据库连接池中的最大的数据库连接数-->
+        <property name="maxPoolSize">100</property>
+<!--        <property name="checkoutTimeout">30000</property>-->
+<!--        <property name="idleConnectionTestPeriod">30</property>-->
+<!--        <property name="maxIdleTime">30</property>-->
+<!--        <property name="maxStatements">200</property>-->
+    </named-config>
+</c3p0-config>
+
+
